@@ -160,7 +160,11 @@ const newReduced = zooAnimals.reduce((accumulator, currentValue) => {
   return accumulator + currentValue;
 }, 0);
 
-populationTotal.push(newReduced);
+function pushNewReduced(newReduced) {
+  populationTotal.push(newReduced);
+}
+
+
 console.log(populationTotal);
 
 
